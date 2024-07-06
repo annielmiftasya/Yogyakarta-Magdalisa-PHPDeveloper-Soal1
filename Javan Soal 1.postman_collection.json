@@ -1,0 +1,601 @@
+{
+	"info": {
+		"_postman_id": "334cc672-9c65-4737-8768-2c0e42c76e17",
+		"name": "Javan Soal 1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "13993231"
+	},
+	"item": [
+		{
+			"name": "Get All Data",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstname\":\"tasya\",\r\n    \"lastname\":\"hai\",\r\n    \"email\":\"tasya@gmail.com\",\r\n    \"phone\":\"0852312121\",\r\n    \"city\":\"paris\",\r\n    \"country\":\"france\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://soal1.test/api/families"
+			},
+			"response": [
+				{
+					"name": "Get All Data",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstname\":\"tasya\",\r\n    \"lastname\":\"hai\",\r\n    \"email\":\"tasya@gmail.com\",\r\n    \"phone\":\"0852312121\",\r\n    \"city\":\"paris\",\r\n    \"country\":\"france\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://soal1.test/api/families"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.27.0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.3.8"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 06 Jul 2024 04:48:01 GMT"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": [\n        {\n            \"id\": 1,\n            \"nama\": \"Budi\",\n            \"jenis_kelamin\": \"Laki-laki\",\n            \"parent_id\": null,\n            \"created_at\": null,\n            \"updated_at\": null\n        },\n        {\n            \"id\": 2,\n            \"nama\": \"Dedi\",\n            \"jenis_kelamin\": \"Laki-laki\",\n            \"parent_id\": 1,\n            \"created_at\": null,\n            \"updated_at\": null\n        },\n        {\n            \"id\": 3,\n            \"nama\": \"Dodi\",\n            \"jenis_kelamin\": \"Laki-laki\",\n            \"parent_id\": 1,\n            \"created_at\": null,\n            \"updated_at\": null\n        },\n        {\n            \"id\": 4,\n            \"nama\": \"Dede\",\n            \"jenis_kelamin\": \"Laki-laki\",\n            \"parent_id\": 1,\n            \"created_at\": null,\n            \"updated_at\": null\n        },\n        {\n            \"id\": 5,\n            \"nama\": \"Dewi\",\n            \"jenis_kelamin\": \"Perempuan\",\n            \"parent_id\": 1,\n            \"created_at\": null,\n            \"updated_at\": \"2024-07-06T04:35:04.000000Z\"\n        },\n        {\n            \"id\": 7,\n            \"nama\": \"Farah\",\n            \"jenis_kelamin\": \"Perempuan\",\n            \"parent_id\": 2,\n            \"created_at\": null,\n            \"updated_at\": null\n        },\n        {\n            \"id\": 8,\n            \"nama\": \"Gugus\",\n            \"jenis_kelamin\": \"Laki-laki\",\n            \"parent_id\": 3,\n            \"created_at\": null,\n            \"updated_at\": null\n        },\n        {\n            \"id\": 10,\n            \"nama\": \"Hani\",\n            \"jenis_kelamin\": \"Perempuan\",\n            \"parent_id\": 4,\n            \"created_at\": null,\n            \"updated_at\": null\n        },\n        {\n            \"id\": 11,\n            \"nama\": \"Hana\",\n            \"jenis_kelamin\": \"Perempuan\",\n            \"parent_id\": 4,\n            \"created_at\": null,\n            \"updated_at\": null\n        },\n        {\n            \"id\": 15,\n            \"nama\": \"Feri\",\n            \"jenis_kelamin\": \"Laki-laki\",\n            \"parent_id\": 2,\n            \"created_at\": \"2024-07-06T04:42:37.000000Z\",\n            \"updated_at\": \"2024-07-06T04:43:08.000000Z\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Detail Data",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstname\":\"tasya\",\r\n    \"lastname\":\"hai\",\r\n    \"email\":\"tasya@gmail.com\",\r\n    \"phone\":\"0852312121\",\r\n    \"city\":\"paris\",\r\n    \"country\":\"france\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://soal1.test/api/families/:family_id",
+					"protocol": "http",
+					"host": [
+						"soal1",
+						"test"
+					],
+					"path": [
+						"api",
+						"families",
+						":family_id"
+					],
+					"variable": [
+						{
+							"key": "family_id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Detail Data",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstname\":\"tasya\",\r\n    \"lastname\":\"hai\",\r\n    \"email\":\"tasya@gmail.com\",\r\n    \"phone\":\"0852312121\",\r\n    \"city\":\"paris\",\r\n    \"country\":\"france\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://soal1.test/api/families/:family_id",
+							"protocol": "http",
+							"host": [
+								"soal1",
+								"test"
+							],
+							"path": [
+								"api",
+								"families",
+								":family_id"
+							],
+							"variable": [
+								{
+									"key": "family_id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.27.0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.3.8"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 06 Jul 2024 04:49:17 GMT"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"id\": 2,\n        \"nama\": \"Dedi\",\n        \"jenis_kelamin\": \"Laki-laki\",\n        \"parent_id\": 1,\n        \"created_at\": null,\n        \"updated_at\": null\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete Data",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstname\":\"tasya\",\r\n    \"lastname\":\"hai\",\r\n    \"email\":\"tasya@gmail.com\",\r\n    \"phone\":\"0852312121\",\r\n    \"city\":\"paris\",\r\n    \"country\":\"france\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://soal1.test/api/families/:family_id",
+					"protocol": "http",
+					"host": [
+						"soal1",
+						"test"
+					],
+					"path": [
+						"api",
+						"families",
+						":family_id"
+					],
+					"variable": [
+						{
+							"key": "family_id",
+							"value": "16"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete Data",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstname\":\"tasya\",\r\n    \"lastname\":\"hai\",\r\n    \"email\":\"tasya@gmail.com\",\r\n    \"phone\":\"0852312121\",\r\n    \"city\":\"paris\",\r\n    \"country\":\"france\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://soal1.test/api/families/:family_id",
+							"protocol": "http",
+							"host": [
+								"soal1",
+								"test"
+							],
+							"path": [
+								"api",
+								"families",
+								":family_id"
+							],
+							"variable": [
+								{
+									"key": "family_id",
+									"value": "16"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.27.0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.3.8"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 06 Jul 2024 05:04:11 GMT"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Family member deleted successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Add Data",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nama",
+							"value": "tasya",
+							"type": "text"
+						},
+						{
+							"key": "jenis_kelamin",
+							"value": "Perempuan",
+							"type": "text"
+						},
+						{
+							"key": "parent_id",
+							"value": "1",
+							"description": "parent id dari family id bisa dilihat get ALL DATA",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://soal1.test/api/families"
+			},
+			"response": [
+				{
+					"name": "Add Data",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nama",
+									"value": "tasya",
+									"type": "text"
+								},
+								{
+									"key": "jenis_kelamin",
+									"value": "Perempuan",
+									"type": "text"
+								},
+								{
+									"key": "parent_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://soal1.test/api/families"
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.27.0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.3.8"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 06 Jul 2024 04:50:43 GMT"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Family member created successfully\",\n    \"data\": {\n        \"nama\": \"tasya\",\n        \"jenis_kelamin\": \"Perempuan\",\n        \"parent_id\": \"1\",\n        \"updated_at\": \"2024-07-06T04:50:43.000000Z\",\n        \"created_at\": \"2024-07-06T04:50:43.000000Z\",\n        \"id\": 16\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Edit Data",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nama",
+							"value": "tasya",
+							"type": "text"
+						},
+						{
+							"key": "jenis_kelamin",
+							"value": "Perempuan",
+							"type": "text"
+						},
+						{
+							"key": "parent_id",
+							"value": "1",
+							"description": "parent id dari family id bisa dilihat get ALL DATA",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://soal1.test/api/families/:family_id",
+					"protocol": "http",
+					"host": [
+						"soal1",
+						"test"
+					],
+					"path": [
+						"api",
+						"families",
+						":family_id"
+					],
+					"variable": [
+						{
+							"key": "family_id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Edit Data",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nama",
+									"value": "tasya",
+									"type": "text"
+								},
+								{
+									"key": "jenis_kelamin",
+									"value": "Perempuan",
+									"type": "text"
+								},
+								{
+									"key": "parent_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://soal1.test/api/families/:family_id",
+							"protocol": "http",
+							"host": [
+								"soal1",
+								"test"
+							],
+							"path": [
+								"api",
+								"families",
+								":family_id"
+							],
+							"variable": [
+								{
+									"key": "family_id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.27.0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.3.8"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 06 Jul 2024 05:00:39 GMT"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Family member updated successfully\",\n    \"data\": {\n        \"id\": 2,\n        \"nama\": \"tasya\",\n        \"jenis_kelamin\": \"Perempuan\",\n        \"parent_id\": \"1\",\n        \"created_at\": null,\n        \"updated_at\": \"2024-07-06T05:00:39.000000Z\"\n    }\n}"
+				}
+			]
+		}
+	]
+}
